@@ -2,7 +2,7 @@
 
 Code, derived data and results for the article
 
-> Nagdeve P, Kumari J and Wadhvani R. *Predictor construction and station homogeneity matter more than model architecture in reanalysis-to-station wind speed downscaling: a probabilistic case study for wind energy at Jaipur, India.* Wind Engineering (under review, WIE-26-0353).
+> Nagdeve P, Wadhvani R and Kumari J. *Predictor construction and station homogeneity matter more than model architecture in reanalysis-to-station wind speed downscaling: a probabilistic case study for wind energy at Jaipur, India.* Wind Engineering (under review, WIE-26-0353).
 
 Daily ERA5 predictors are downscaled to observed wind speed at Jaipur airport (NOAA ISD station 42348099999) with eight models: MLR, XGBoost, LSTM, BiLSTM, attention-BiLSTM, TCN, attention-TCN and a Transformer encoder. A factorial design crosses the predictor set with the treatment of a 2011 break in the station record. Every model gets the same tuning budget (30 random settings) and ten random seeds. Quantile XGBoost and a quantile TCN with conformal calibration provide probabilistic output, which is evaluated on energy-relevant measures.
 
@@ -41,7 +41,8 @@ All scripts are run from the repository root. Training uses CPUs only (one threa
    ```
 5. **Revision analyses:**
    ```bash
-   for t in A_WS B_SPD C_NOSPD D_POST E_RATIO; do python revision/run_config2.py $t; done   # intermediate sets, break treatments
+   for t in A_WS B_SPD C_NOSPD D_POST E_RATIO F_PRE G_PREADJ; do python revision/run_config2.py $t; done   # intermediate sets, break treatments
+   python revision/valid_time_era5.py <era5_hourly.csv> && ERA5EXT=data/era5_daily_ext_syn.csv python revision/run_config2.py H_VALID MLR XGBoost TCN
    python revision/prob2.py                                    # separate calibration year
    python revision/anova.py; python revision/pairwise.py       # ANOVA with interactions; pairwise RMSE-difference CIs
    python revision/homog2.py                                   # second reference, training years, AR(1) significance
@@ -53,7 +54,7 @@ All scripts are run from the repository root. Training uses CPUs only (one threa
    ```
    Steps 3–5 can be skipped. `results/` already holds the saved predictions, so the revision analyses and figures can be rerun from them directly.
 
-Set-up names: P0 = original 8 daily-mean variables; P1 = physics-based set (21 variables); R1 = regime indicator (1 from February 2011). A, B and C are the intermediate predictor sets; D is training on post-break years only; E is the ratio-adjusted pre-break target.
+Set-up names: P0 = original 8 daily-mean variables; P1 = physics-based set (21 variables); R1 = regime indicator (1 from February 2011). A, B and C are the intermediate predictor sets; D is training on post-break years only; E is the ratio-adjusted pre-break target; F and G keep 2000–2004 with a second indicator or a ratio adjustment; H uses ERA5 speed averaged at the valid station report times.
 
 Results can differ slightly between hardware and library versions; the saved predictions in `results/` are the ones reported in the article.
 

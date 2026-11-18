@@ -5,11 +5,11 @@ authors:
   - family-names: Nagdeve
     given-names: Pratik
     affiliation: "Centre for Artificial Intelligence, Maulana Azad National Institute of Technology, Bhopal"
-  - family-names: Kumari
-    given-names: Juhi
-    affiliation: "Centre for Artificial Intelligence, Maulana Azad National Institute of Technology, Bhopal"
   - family-names: Wadhvani
     given-names: Rajesh
+    affiliation: "Centre for Artificial Intelligence, Maulana Azad National Institute of Technology, Bhopal"
+  - family-names: Kumari
+    given-names: Juhi
     affiliation: "Centre for Artificial Intelligence, Maulana Azad National Institute of Technology, Bhopal"
 license: MIT
 preferred-citation:
