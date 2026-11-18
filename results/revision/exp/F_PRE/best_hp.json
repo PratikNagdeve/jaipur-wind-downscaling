@@ -1,0 +1,20 @@
+{
+ "XGBoost": {
+  "max_depth": 4,
+  "learning_rate": 0.01,
+  "subsample": 0.8,
+  "colsample_bytree": 0.5,
+  "min_child_weight": 1,
+  "reg_lambda": 1.0
+ },
+ "TCN": {
+  "filters": 64,
+  "kernel": 2,
+  "blocks": 1,
+  "dropout": 0.0,
+  "l2": 0.001,
+  "dense": 64,
+  "lr": 0.003,
+  "batch": 128
+ }
+}
