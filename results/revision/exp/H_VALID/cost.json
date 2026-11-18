@@ -1,0 +1,27 @@
+{
+ "n_train": 3114,
+ "features": [
+  "u10",
+  "v10",
+  "d2m",
+  "t2m",
+  "blh",
+  "msl",
+  "sp",
+  "tp",
+  "ws_valid",
+  "ws_max",
+  "ws_day",
+  "ws_night",
+  "ws_sd",
+  "blh_max",
+  "blh_min",
+  "t2m_range",
+  "steady",
+  "dir_sin",
+  "dir_cos",
+  "doy_sin",
+  "doy_cos",
+  "regime"
+ ]
+}
