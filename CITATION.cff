@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "Jaipur wind speed downscaling: predictor construction, station homogeneity and architecture"
+authors:
+  - family-names: Nagdeve
+    given-names: Pratik
+    affiliation: "Centre for Artificial Intelligence, Maulana Azad National Institute of Technology, Bhopal"
+  - family-names: Kumari
+    given-names: Juhi
+    affiliation: "Centre for Artificial Intelligence, Maulana Azad National Institute of Technology, Bhopal"
+  - family-names: Wadhvani
+    given-names: Rajesh
+    affiliation: "Centre for Artificial Intelligence, Maulana Azad National Institute of Technology, Bhopal"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Predictor construction and station homogeneity matter more than model architecture in reanalysis-to-station wind speed downscaling: a probabilistic case study for wind energy at Jaipur, India"
+  authors:
+    - family-names: Nagdeve
+      given-names: Pratik
+    - family-names: Kumari
+      given-names: Juhi
+    - family-names: Wadhvani
+      given-names: Rajesh
+  journal: "Wind Engineering"
+  notes: "Under review (manuscript WIE-26-0353)"
