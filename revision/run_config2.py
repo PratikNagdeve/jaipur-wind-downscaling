@@ -6,7 +6,11 @@ TAG:
   B_SPD     original 8 + five speed predictors                       + regime indicator
   C_NOSPD   original 8 + physics predictors without the five speeds  + regime indicator
   D_POST    physics set, training restricted to Feb 2011-2014, no indicator
-  E_RATIO   physics set, pre-break target scaled by the training-period ratio change, no indicator"""
+  E_RATIO   physics set, pre-break target scaled by the training-period ratio change, no indicator
+  H_VALID   physics set with the hourly-mean speed replaced by ERA5 speed at valid station report times
+            (needs ERA5EXT=data/era5_daily_ext_syn.csv from revision/valid_time_era5.py)
+  F_PRE     keep 2000-2004 in training with a second (pre-2005) regime indicator
+  G_PREADJ  keep 2000-2004 with the pre-2005 station values ratio-adjusted"""
 import os as _os, sys as _sys
 ROOT = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
 _os.chdir(ROOT); _sys.path.insert(0, _os.path.join(ROOT, 'src'))
@@ -41,6 +45,18 @@ elif TAG == 'E_RATIO':
     M = tr[['station', 'ws_scalar']].resample('MS').mean(); cnt = tr.station.resample('MS').count(); M = M[cnt >= 20].dropna()
     q = M.station / M.ws_scalar; f = q[q.index >= BREAK].mean() / q[q.index < BREAK].mean()
     D.loc[D.date < BREAK, 'station'] *= f; info['ratio_factor'] = float(f)
+elif TAG == 'H_VALID':
+    feats = [('ws_valid' if f == 'ws_scalar' else f) for f in PHYS] + ['regime']
+elif TAG in ('F_PRE', 'G_PREADJ'):
+    S2 = pd.read_csv('data/jaipur_daily_wind.csv', parse_dates=['date']).rename(columns={'wind_speed_ms': 'station'})
+    D = D.drop(columns='station').merge(S2, on='date', how='left'); SPLIT = dict(SPLIT, train=(2000, 2014))
+    if TAG == 'F_PRE':
+        D['pre2005'] = (D.date < '2005-01-01').astype(float); feats = PHYS + ['regime', 'pre2005']
+    else:
+        tr = D[D.date.dt.year.between(2000, 2014)].set_index('date')
+        M = tr[['station', 'ws_scalar']].resample('MS').mean(); cnt = tr.station.resample('MS').count(); M = M[cnt >= 20].dropna()
+        q = M.station / M.ws_scalar; f = q[(q.index >= '2005-01-01') & (q.index < BREAK)].mean() / q[q.index < '2005-01-01'].mean()
+        D.loc[D.date < '2005-01-01', 'station'] *= f; info['pre2005_factor'] = float(f); feats = PHYS + ['regime']
 d = Data(7, 0, split=SPLIT, df=D, target='station', features=feats)
 Xtr, ytr, _ = d.get('train'); Xva, yva, _ = d.get('val'); Xte, yte, tte = d.get('test')
 flat = lambda X: X.reshape(len(X), -1)

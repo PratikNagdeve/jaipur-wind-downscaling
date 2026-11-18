@@ -3,7 +3,7 @@ import os as _os, sys as _sys
 ROOT = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
 _os.chdir(ROOT); _sys.path.insert(0, _os.path.join(ROOT, 'src'))
 import json, sys, numpy as np, pandas as pd
-sys.path.insert(0, _os.path.join(ROOT, 'src'))
+sys.path.insert(0, '/home/claude/rev/base')
 from stats_util import dm_test
 R = ROOT; B = f'{R}/results/main'; X = f'{R}/results/revision/exp'
 N = {}; TB = {}
@@ -66,7 +66,7 @@ if all(t in P and all(f'{m}_test' in P[t] for m in M4) for t in ['D_POST', 'E_RA
     rows = []
     for c, l in [('P1R0', 'No treatment (P1R0)'), ('P1R1', 'Regime indicator (P1R1)'), ('D_POST', 'Post-break training only'), ('E_RATIO', 'Ratio-adjusted pre-break target')]:
         rows.append('| ' + l + ' | ' + ' | '.join(f'{f3(seedmean(c, m))} ({sg(bias(c, m))})' for m in M4) + ' |')
-    TB['T_regime'] = '| Treatment of the 2011 break | MLR | XGBoost | TCN | BiLSTM |\n|---|---|---|---|---|\n' + '\n'.join(rows)
+    TB['T_regime'] = '| Treatment of the station breaks | MLR | XGBoost | TCN | BiLSTM |\n|---|---|---|---|---|\n' + '\n'.join(rows)
     for c in ['P1R0', 'P1R1', 'D_POST', 'E_RATIO']:
         for m in M4: N[f'{c}_{m}_rmse'] = f3(seedmean(c, m)); N[f'{c}_{m}_bias'] = sg(bias(c, m))
         N[f'{c}_mean_rmse'] = f3(np.mean([seedmean(c, m) for m in M4]))
@@ -188,3 +188,26 @@ if 'sep_qx_cov' in N and 'sep_qt_cov' in N:
     TB['T_prob'] = '| Measure | Quantile XGBoost | Quantile TCN |\n|---|---|---|\n' + '\n'.join(f'| {a} | {b} | {c} |' for a, b, c in rr)
 json.dump(N, open(f'{R}/results/revision/numbers.json', 'w'), indent=1); json.dump(TB, open(f'{R}/results/revision/tables.json', 'w'), indent=1)
 print('extra ok', len(N), list(TB))
+
+# ---------- Reviewer 1 additions: valid-time sampling, pre-2005 alternatives
+M3 = ['MLR', 'XGBoost', 'TCN']
+for t in ['H_VALID', 'F_PRE', 'G_PREADJ']:
+    try: P[t] = load(f'{X}/{t}/preds.npz')
+    except FileNotFoundError: pass
+if all(t in P for t in ['H_VALID', 'F_PRE', 'G_PREADJ']):
+    for t in ['H_VALID', 'F_PRE', 'G_PREADJ']:
+        for m in M3:
+            N[f'{t}_{m}_rmse'] = f3(seedmean(t, m)); N[f'{t}_{m}_bias'] = sg(bias(t, m)); N[f'{t}_{m}_p'] = pf(dmp(t, 'P1R1', m))
+    N['H_pmin'] = f"{min(dmp('H_VALID', 'P1R1', m) for m in M3):.2f}"
+    N['pre2005_factor'] = f"{json.load(open(f'{X}/G_PREADJ/cost.json'))['pre2005_factor']:.2f}"
+    base_rows = TB['T_regime'].split('\n')
+    extra = []
+    for c, l in [('F_PRE', 'Keep 2000–2004, second regime indicator'), ('G_PREADJ', 'Keep 2000–2004, ratio-adjusted (×' + N['pre2005_factor'] + ')')]:
+        extra.append('| ' + l + ' | ' + ' | '.join(f'{f3(seedmean(c, m))} ({sg(bias(c, m))})' for m in M3) + ' | – |')
+    TB['T_regime'] = '\n'.join(base_rows + extra)
+    # baselines with valid-time sampling
+    E2 = pd.read_csv(f'{R}/data/era5_daily_ext_syn.csv', parse_dates=['date']).merge(pd.read_csv(f'{R}/data/jaipur_daily_wind.csv', parse_dates=['date']).rename(columns={'wind_speed_ms': 'obs'}), on='date')
+    tr2 = E2[E2.date.dt.year.between(2005, 2014)].dropna(subset=['obs']); te2 = E2.set_index('date').loc[pd.to_datetime(P['P1R1']['test_dates'])]
+    bb, aa = np.polyfit(tr2.ws_valid, tr2.obs, 1)
+    N['valid_raw_rmse'] = f3(rm(te2.ws_valid.values, y)); N['valid_raw_r'] = f3(np.corrcoef(te2.ws_valid, y)[0, 1]); N['valid_lc_rmse'] = f3(rm(aa + bb * te2.ws_valid.values, y))
+json.dump(N, open(f'{R}/results/revision/numbers.json', 'w'), indent=1); json.dump(TB, open(f'{R}/results/revision/tables.json', 'w'), indent=1)
