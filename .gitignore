@@ -1,0 +1,10 @@
+data/raw/
+data/ne/
+data/era5_hourly*.csv
+data/era5_daily_ext.csv
+data/era5_imdaa_daily.csv
+results/**/models/
+results/**/logs/
+*.pt
+__pycache__/
+*.pyc
