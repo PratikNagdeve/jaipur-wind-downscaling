@@ -1,0 +1,70 @@
+{
+ "XGBoost": {
+  "max_depth": 3,
+  "learning_rate": 0.03,
+  "subsample": 0.8,
+  "colsample_bytree": 1.0,
+  "min_child_weight": 5,
+  "reg_lambda": 1.0
+ },
+ "TCN": {
+  "filters": 32,
+  "kernel": 5,
+  "blocks": 1,
+  "dropout": 0.2,
+  "l2": 0.001,
+  "dense": 32,
+  "lr": 0.003,
+  "batch": 64
+ },
+ "Attention-TCN": {
+  "filters": 16,
+  "kernel": 5,
+  "blocks": 2,
+  "dropout": 0.2,
+  "l2": 0.001,
+  "att": 8,
+  "dense": 16,
+  "lr": 0.003,
+  "batch": 32
+ },
+ "Transformer": {
+  "d_model": 16,
+  "heads": 2,
+  "layers": 2,
+  "ff": 64,
+  "dropout": 0.0,
+  "l2": 0.0,
+  "dense": 64,
+  "lr": 0.001,
+  "batch": 32
+ },
+ "LSTM": {
+  "units": 32,
+  "layers": 2,
+  "dropout": 0.0,
+  "l2": 0.0001,
+  "dense": 64,
+  "lr": 0.001,
+  "batch": 64
+ },
+ "BiLSTM": {
+  "units": 32,
+  "layers": 2,
+  "dropout": 0.1,
+  "l2": 1e-05,
+  "dense": 64,
+  "lr": 0.003,
+  "batch": 32
+ },
+ "Attention-BiLSTM": {
+  "units": 32,
+  "layers": 1,
+  "dropout": 0.0,
+  "l2": 0.0001,
+  "dense": 16,
+  "lr": 0.003,
+  "batch": 32,
+  "att": 16
+ }
+}

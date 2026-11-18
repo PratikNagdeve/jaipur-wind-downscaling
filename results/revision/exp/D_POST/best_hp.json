@@ -1,0 +1,29 @@
+{
+ "XGBoost": {
+  "max_depth": 2,
+  "learning_rate": 0.03,
+  "subsample": 0.6,
+  "colsample_bytree": 0.5,
+  "min_child_weight": 5,
+  "reg_lambda": 0.0
+ },
+ "TCN": {
+  "filters": 32,
+  "kernel": 2,
+  "blocks": 3,
+  "dropout": 0.3,
+  "l2": 0.0,
+  "dense": 64,
+  "lr": 0.003,
+  "batch": 32
+ },
+ "BiLSTM": {
+  "units": 64,
+  "layers": 2,
+  "dropout": 0.2,
+  "l2": 0.001,
+  "dense": 32,
+  "lr": 0.001,
+  "batch": 64
+ }
+}

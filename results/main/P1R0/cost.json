@@ -1,0 +1,40 @@
+{
+ "MLR": {
+  "train_s": 0.13698410987854004,
+  "params": 148
+ },
+ "XGBoost": {
+  "train_s": 1.1720837593078612,
+  "params": "163 trees"
+ },
+ "TCN": {
+  "train_s": 4.123442435264588,
+  "params": 33153,
+  "epochs": 26.2
+ },
+ "Attention-TCN": {
+  "train_s": 19.08078145980835,
+  "params": 113026,
+  "epochs": 27.2
+ },
+ "Transformer": {
+  "train_s": 9.52585482597351,
+  "params": 15585,
+  "epochs": 24.4
+ },
+ "LSTM": {
+  "train_s": 3.139133906364441,
+  "params": 5825,
+  "epochs": 25.0
+ },
+ "BiLSTM": {
+  "train_s": 16.006780362129213,
+  "params": 152193,
+  "epochs": 25.5
+ },
+ "Attention-BiLSTM": {
+  "train_s": 12.422709274291993,
+  "params": 42338,
+  "epochs": 26.2
+ }
+}

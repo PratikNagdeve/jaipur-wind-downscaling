@@ -1,0 +1,931 @@
+model,seed,kind,predictor,inc
+XGBoost,0,group,Wind speed (5 hourly-based),0.4350776767787087
+XGBoost,0,group,"Wind components (u10, v10)",0.01811890614291838
+XGBoost,0,group,Wind direction and steadiness,0.005944235609334858
+XGBoost,0,group,"Boundary layer height (mean, max, min)",0.03059004525185368
+XGBoost,0,group,"Temperature and humidity (t2m, d2m, t2m range)",0.00793674322972
+XGBoost,0,group,"Pressure (sp, msl)",0.0011225062433541377
+XGBoost,0,group,Precipitation (tp),0.02180411479788331
+XGBoost,0,group,Day of year,0.028144966558578465
+XGBoost,0,group,Regime indicator,0.0
+XGBoost,0,single,u10,0.01571287034879971
+XGBoost,0,single,v10,0.0003530930843037239
+XGBoost,0,single,d2m,0.0006657183122304678
+XGBoost,0,single,t2m,0.0020875454845794674
+XGBoost,0,single,blh,0.007972835573414905
+XGBoost,0,single,msl,-0.0023215348849444095
+XGBoost,0,single,sp,-1.0290204155882776e-05
+XGBoost,0,single,tp,0.020989228736688636
+XGBoost,0,single,ws_scalar,0.17568628761732677
+XGBoost,0,single,ws_max,0.0862592697822825
+XGBoost,0,single,ws_day,-0.0003627899607381746
+XGBoost,0,single,ws_night,-0.003803165122368113
+XGBoost,0,single,ws_sd,-0.00013643035024134552
+XGBoost,0,single,blh_max,0.0009612164888855191
+XGBoost,0,single,blh_min,0.008214395281409114
+XGBoost,0,single,t2m_range,0.002723755996545152
+XGBoost,0,single,steady,0.0031719296364907112
+XGBoost,0,single,dir_sin,-0.0005452671059737457
+XGBoost,0,single,dir_cos,-0.0006113615635397251
+XGBoost,0,single,doy_sin,0.027780281270195384
+XGBoost,0,single,doy_cos,-0.0012366956166442121
+XGBoost,0,single,regime,0.0
+XGBoost,1,group,Wind speed (5 hourly-based),0.43545131109215474
+XGBoost,1,group,"Wind components (u10, v10)",0.017545567405397422
+XGBoost,1,group,Wind direction and steadiness,0.007712130179840337
+XGBoost,1,group,"Boundary layer height (mean, max, min)",0.026998328398431005
+XGBoost,1,group,"Temperature and humidity (t2m, d2m, t2m range)",0.007913697228778594
+XGBoost,1,group,"Pressure (sp, msl)",0.0016277681254968312
+XGBoost,1,group,Precipitation (tp),0.022719491010481718
+XGBoost,1,group,Day of year,0.031957292932984126
+XGBoost,1,group,Regime indicator,0.0
+XGBoost,1,single,u10,0.014657978679717465
+XGBoost,1,single,v10,0.0010296805831543799
+XGBoost,1,single,d2m,-5.972339385869052e-05
+XGBoost,1,single,t2m,0.002521702109906765
+XGBoost,1,single,blh,0.007966925864625007
+XGBoost,1,single,msl,-0.001843829930465646
+XGBoost,1,single,sp,-0.001189778079887227
+XGBoost,1,single,tp,0.0229452633470258
+XGBoost,1,single,ws_scalar,0.1703033619187238
+XGBoost,1,single,ws_max,0.07816887828296099
+XGBoost,1,single,ws_day,-0.0011510449629670515
+XGBoost,1,single,ws_night,-0.003662256226065708
+XGBoost,1,single,ws_sd,-0.00013392934257777656
+XGBoost,1,single,blh_max,0.0016244581720898598
+XGBoost,1,single,blh_min,0.009862169498009776
+XGBoost,1,single,t2m_range,0.0046608357769235
+XGBoost,1,single,steady,0.003597820549050368
+XGBoost,1,single,dir_sin,0.0013601693427416016
+XGBoost,1,single,dir_cos,7.0958039933533e-05
+XGBoost,1,single,doy_sin,0.029325077676568466
+XGBoost,1,single,doy_cos,-0.0008381470017344128
+XGBoost,1,single,regime,0.0
+XGBoost,2,group,Wind speed (5 hourly-based),0.437928489214715
+XGBoost,2,group,"Wind components (u10, v10)",0.016205765833327647
+XGBoost,2,group,Wind direction and steadiness,0.006449108661099301
+XGBoost,2,group,"Boundary layer height (mean, max, min)",0.029242930700228265
+XGBoost,2,group,"Temperature and humidity (t2m, d2m, t2m range)",0.006671793967385986
+XGBoost,2,group,"Pressure (sp, msl)",-6.345714591509122e-05
+XGBoost,2,group,Precipitation (tp),0.015282925024331184
+XGBoost,2,group,Day of year,0.025156728396511084
+XGBoost,2,group,Regime indicator,0.0
+XGBoost,2,single,u10,0.013584293358681932
+XGBoost,2,single,v10,0.0004194720894196369
+XGBoost,2,single,d2m,0.00021732523579542917
+XGBoost,2,single,t2m,0.0022051452115589786
+XGBoost,2,single,blh,0.008186184429857279
+XGBoost,2,single,msl,-0.0024405603374249686
+XGBoost,2,single,sp,-0.00013196948969471656
+XGBoost,2,single,tp,0.01617461433428945
+XGBoost,2,single,ws_scalar,0.1835058154488397
+XGBoost,2,single,ws_max,0.07953348956588951
+XGBoost,2,single,ws_day,-0.00022865726207724757
+XGBoost,2,single,ws_night,-0.0027451705631311497
+XGBoost,2,single,ws_sd,-8.195312228539419e-05
+XGBoost,2,single,blh_max,0.0021673250487154404
+XGBoost,2,single,blh_min,0.009411453438218031
+XGBoost,2,single,t2m_range,0.0010960904040281717
+XGBoost,2,single,steady,0.0020382135833159733
+XGBoost,2,single,dir_sin,0.000899237685508436
+XGBoost,2,single,dir_cos,-8.312536211547705e-05
+XGBoost,2,single,doy_sin,0.02549776791200592
+XGBoost,2,single,doy_cos,-0.0005855958936218486
+XGBoost,2,single,regime,0.0
+XGBoost,3,group,Wind speed (5 hourly-based),0.4318838331917515
+XGBoost,3,group,"Wind components (u10, v10)",0.017322244244885744
+XGBoost,3,group,Wind direction and steadiness,0.005821952645609796
+XGBoost,3,group,"Boundary layer height (mean, max, min)",0.027507647250058786
+XGBoost,3,group,"Temperature and humidity (t2m, d2m, t2m range)",0.009478752606370645
+XGBoost,3,group,"Pressure (sp, msl)",0.0013867114540613956
+XGBoost,3,group,Precipitation (tp),0.01968812645867222
+XGBoost,3,group,Day of year,0.027438077689118066
+XGBoost,3,group,Regime indicator,0.0
+XGBoost,3,single,u10,0.015174067971437144
+XGBoost,3,single,v10,0.00010635036713840806
+XGBoost,3,single,d2m,0.0006641372434832982
+XGBoost,3,single,t2m,0.003448405320722914
+XGBoost,3,single,blh,0.005594137422299317
+XGBoost,3,single,msl,-0.002159263707829573
+XGBoost,3,single,sp,-0.000502715012964039
+XGBoost,3,single,tp,0.019499139904036435
+XGBoost,3,single,ws_scalar,0.15853661617500178
+XGBoost,3,single,ws_max,0.075561350716814
+XGBoost,3,single,ws_day,-0.0019531180272074455
+XGBoost,3,single,ws_night,-0.0037627851491682353
+XGBoost,3,single,ws_sd,1.2427656128821684e-05
+XGBoost,3,single,blh_max,0.0023795837720106184
+XGBoost,3,single,blh_min,0.009178641387716702
+XGBoost,3,single,t2m_range,0.004035557728867023
+XGBoost,3,single,steady,0.0030309940705452233
+XGBoost,3,single,dir_sin,-0.0008712324939303961
+XGBoost,3,single,dir_cos,0.00014543470918145784
+XGBoost,3,single,doy_sin,0.028641243065576305
+XGBoost,3,single,doy_cos,-0.0006495639860446878
+XGBoost,3,single,regime,0.0
+XGBoost,4,group,Wind speed (5 hourly-based),0.43699260194349937
+XGBoost,4,group,"Wind components (u10, v10)",0.02117304361091068
+XGBoost,4,group,Wind direction and steadiness,0.0037905002352150775
+XGBoost,4,group,"Boundary layer height (mean, max, min)",0.02534988551196955
+XGBoost,4,group,"Temperature and humidity (t2m, d2m, t2m range)",0.007645157797482838
+XGBoost,4,group,"Pressure (sp, msl)",0.0011516053954819805
+XGBoost,4,group,Precipitation (tp),0.022471567269539073
+XGBoost,4,group,Day of year,0.026527942046554297
+XGBoost,4,group,Regime indicator,0.0
+XGBoost,4,single,u10,0.016358060734072744
+XGBoost,4,single,v10,0.00047235627784532054
+XGBoost,4,single,d2m,0.0010280740516286579
+XGBoost,4,single,t2m,0.002356829809862948
+XGBoost,4,single,blh,0.005732715650195452
+XGBoost,4,single,msl,-0.0016477655428447369
+XGBoost,4,single,sp,-0.001850861223648892
+XGBoost,4,single,tp,0.023929616110373343
+XGBoost,4,single,ws_scalar,0.16682597077972047
+XGBoost,4,single,ws_max,0.07816022247887382
+XGBoost,4,single,ws_day,0.0004763161682039163
+XGBoost,4,single,ws_night,-0.004075049493061656
+XGBoost,4,single,ws_sd,-0.001428052138882685
+XGBoost,4,single,blh_max,0.002089676500783877
+XGBoost,4,single,blh_min,0.006556487260012988
+XGBoost,4,single,t2m_range,0.00413639441986432
+XGBoost,4,single,steady,0.0030654667845760653
+XGBoost,4,single,dir_sin,-0.0004562542095425615
+XGBoost,4,single,dir_cos,-0.0003340677050852725
+XGBoost,4,single,doy_sin,0.027458235144529164
+XGBoost,4,single,doy_cos,-0.0013130232715264588
+XGBoost,4,single,regime,0.0
+XGBoost,5,group,Wind speed (5 hourly-based),0.43727420812158213
+XGBoost,5,group,"Wind components (u10, v10)",0.01831719705696787
+XGBoost,5,group,Wind direction and steadiness,0.0057635965542648495
+XGBoost,5,group,"Boundary layer height (mean, max, min)",0.02545916411234923
+XGBoost,5,group,"Temperature and humidity (t2m, d2m, t2m range)",0.010226490530734267
+XGBoost,5,group,"Pressure (sp, msl)",0.0002683061560875277
+XGBoost,5,group,Precipitation (tp),0.022660322173505033
+XGBoost,5,group,Day of year,0.029768316567589694
+XGBoost,5,group,Regime indicator,0.0
+XGBoost,5,single,u10,0.014297642946057353
+XGBoost,5,single,v10,-0.0007883902744919679
+XGBoost,5,single,d2m,0.000901978531295633
+XGBoost,5,single,t2m,0.002477345583092083
+XGBoost,5,single,blh,0.0065791675290011176
+XGBoost,5,single,msl,-0.0015973708150723077
+XGBoost,5,single,sp,-0.00025892713893410635
+XGBoost,5,single,tp,0.023778114769140556
+XGBoost,5,single,ws_scalar,0.17299296409078027
+XGBoost,5,single,ws_max,0.07480482455535045
+XGBoost,5,single,ws_day,0.00034265121328576066
+XGBoost,5,single,ws_night,-0.002645682032527663
+XGBoost,5,single,ws_sd,-0.00016539438926678197
+XGBoost,5,single,blh_max,0.0014028685436757837
+XGBoost,5,single,blh_min,0.00990067376573145
+XGBoost,5,single,t2m_range,0.004806372767215028
+XGBoost,5,single,steady,0.0031172466157377123
+XGBoost,5,single,dir_sin,5.426779786911195e-05
+XGBoost,5,single,dir_cos,0.00028551271657166754
+XGBoost,5,single,doy_sin,0.030487280732425504
+XGBoost,5,single,doy_cos,-0.0015110235981669272
+XGBoost,5,single,regime,0.0
+XGBoost,6,group,Wind speed (5 hourly-based),0.4289416075731398
+XGBoost,6,group,"Wind components (u10, v10)",0.01851740934884908
+XGBoost,6,group,Wind direction and steadiness,0.007427249892477306
+XGBoost,6,group,"Boundary layer height (mean, max, min)",0.029312431479174682
+XGBoost,6,group,"Temperature and humidity (t2m, d2m, t2m range)",0.007375160595410368
+XGBoost,6,group,"Pressure (sp, msl)",0.0002140123825354223
+XGBoost,6,group,Precipitation (tp),0.02125293039242
+XGBoost,6,group,Day of year,0.026226936714535444
+XGBoost,6,group,Regime indicator,0.0
+XGBoost,6,single,u10,0.014899867988024073
+XGBoost,6,single,v10,-0.00033152334480625046
+XGBoost,6,single,d2m,0.001312298047240601
+XGBoost,6,single,t2m,0.0016701693882549052
+XGBoost,6,single,blh,0.007267145415441078
+XGBoost,6,single,msl,-0.002114976089185949
+XGBoost,6,single,sp,-0.0021645046429798476
+XGBoost,6,single,tp,0.019855345600333762
+XGBoost,6,single,ws_scalar,0.16704553575471187
+XGBoost,6,single,ws_max,0.08587147788804603
+XGBoost,6,single,ws_day,-0.0001360762384172598
+XGBoost,6,single,ws_night,-0.002634503168272162
+XGBoost,6,single,ws_sd,0.0003480061403530521
+XGBoost,6,single,blh_max,0.0024200373115272566
+XGBoost,6,single,blh_min,0.008765239446337957
+XGBoost,6,single,t2m_range,0.002796789626140728
+XGBoost,6,single,steady,0.003511884442571911
+XGBoost,6,single,dir_sin,-1.1966002226782014e-05
+XGBoost,6,single,dir_cos,0.00046121361508761894
+XGBoost,6,single,doy_sin,0.026901493433145362
+XGBoost,6,single,doy_cos,-0.0005522707290854356
+XGBoost,6,single,regime,0.0
+XGBoost,7,group,Wind speed (5 hourly-based),0.4386335143144643
+XGBoost,7,group,"Wind components (u10, v10)",0.015291954479081793
+XGBoost,7,group,Wind direction and steadiness,0.0076702121070817645
+XGBoost,7,group,"Boundary layer height (mean, max, min)",0.02620214627098342
+XGBoost,7,group,"Temperature and humidity (t2m, d2m, t2m range)",0.009088954056668552
+XGBoost,7,group,"Pressure (sp, msl)",-0.0011404653211999128
+XGBoost,7,group,Precipitation (tp),0.0216240905147702
+XGBoost,7,group,Day of year,0.024390491989568386
+XGBoost,7,group,Regime indicator,0.0
+XGBoost,7,single,u10,0.013354548772204999
+XGBoost,7,single,v10,0.0003382592009295915
+XGBoost,7,single,d2m,0.0015028722405579509
+XGBoost,7,single,t2m,0.0028395477484763564
+XGBoost,7,single,blh,0.005433745174903126
+XGBoost,7,single,msl,-0.0023479686147407585
+XGBoost,7,single,sp,-0.0008165693574352595
+XGBoost,7,single,tp,0.020538132974537937
+XGBoost,7,single,ws_scalar,0.16125850806536404
+XGBoost,7,single,ws_max,0.09122601904444841
+XGBoost,7,single,ws_day,-3.330700795604047e-05
+XGBoost,7,single,ws_night,-0.003339573793550521
+XGBoost,7,single,ws_sd,-0.0003950834050518437
+XGBoost,7,single,blh_max,0.002902985243731393
+XGBoost,7,single,blh_min,0.010018093032126186
+XGBoost,7,single,t2m_range,0.0021503197029699604
+XGBoost,7,single,steady,0.002073833951684001
+XGBoost,7,single,dir_sin,0.0020970762559989753
+XGBoost,7,single,dir_cos,0.00014380079427016578
+XGBoost,7,single,doy_sin,0.028180347859302225
+XGBoost,7,single,doy_cos,-0.0005368148410705321
+XGBoost,7,single,regime,0.0
+XGBoost,8,group,Wind speed (5 hourly-based),0.4393239564575519
+XGBoost,8,group,"Wind components (u10, v10)",0.015673184648705384
+XGBoost,8,group,Wind direction and steadiness,0.007085441647659974
+XGBoost,8,group,"Boundary layer height (mean, max, min)",0.027257966437319137
+XGBoost,8,group,"Temperature and humidity (t2m, d2m, t2m range)",0.009096364105603638
+XGBoost,8,group,"Pressure (sp, msl)",0.001106607569903606
+XGBoost,8,group,Precipitation (tp),0.023300469762788177
+XGBoost,8,group,Day of year,0.030743263869383863
+XGBoost,8,group,Regime indicator,0.0
+XGBoost,8,single,u10,0.012652712652357002
+XGBoost,8,single,v10,-0.00018446656981695452
+XGBoost,8,single,d2m,0.0018124927194364093
+XGBoost,8,single,t2m,0.0010266199376937069
+XGBoost,8,single,blh,0.00924765196958811
+XGBoost,8,single,msl,-0.0027880401137021947
+XGBoost,8,single,sp,-0.00019787551322349994
+XGBoost,8,single,tp,0.025779298753825786
+XGBoost,8,single,ws_scalar,0.18999776426598042
+XGBoost,8,single,ws_max,0.07228290655231753
+XGBoost,8,single,ws_day,-0.0006926351350523774
+XGBoost,8,single,ws_night,-0.0030754263765211064
+XGBoost,8,single,ws_sd,0.0001461461900076122
+XGBoost,8,single,blh_max,0.001216351110169811
+XGBoost,8,single,blh_min,0.008427610102465465
+XGBoost,8,single,t2m_range,0.003825860839067685
+XGBoost,8,single,steady,0.002215469276205262
+XGBoost,8,single,dir_sin,-0.0001239607273266996
+XGBoost,8,single,dir_cos,0.001235661645254882
+XGBoost,8,single,doy_sin,0.03182329719654331
+XGBoost,8,single,doy_cos,-0.0009637144016870547
+XGBoost,8,single,regime,0.0
+XGBoost,9,group,Wind speed (5 hourly-based),0.4431113439462336
+XGBoost,9,group,"Wind components (u10, v10)",0.016399456424500837
+XGBoost,9,group,Wind direction and steadiness,0.006860933061863461
+XGBoost,9,group,"Boundary layer height (mean, max, min)",0.025861514721193236
+XGBoost,9,group,"Temperature and humidity (t2m, d2m, t2m range)",0.008957220266312061
+XGBoost,9,group,"Pressure (sp, msl)",0.0014165250492045867
+XGBoost,9,group,Precipitation (tp),0.021224608633509723
+XGBoost,9,group,Day of year,0.030518013747267404
+XGBoost,9,group,Regime indicator,0.0
+XGBoost,9,single,u10,0.014569273492099456
+XGBoost,9,single,v10,0.00018280758225385217
+XGBoost,9,single,d2m,0.00039420542936353665
+XGBoost,9,single,t2m,0.0005688202623889583
+XGBoost,9,single,blh,0.006075068985114729
+XGBoost,9,single,msl,-0.003498001500689696
+XGBoost,9,single,sp,-0.0003169605287535182
+XGBoost,9,single,tp,0.023867987150789683
+XGBoost,9,single,ws_scalar,0.16480247519773766
+XGBoost,9,single,ws_max,0.07728757732724016
+XGBoost,9,single,ws_day,-0.0010500722546857744
+XGBoost,9,single,ws_night,-0.0016212204698759392
+XGBoost,9,single,ws_sd,-6.542425456099732e-05
+XGBoost,9,single,blh_max,0.002593908790284383
+XGBoost,9,single,blh_min,0.008756539465077751
+XGBoost,9,single,t2m_range,0.003396302896131698
+XGBoost,9,single,steady,0.003840344731667811
+XGBoost,9,single,dir_sin,0.0013251399460301294
+XGBoost,9,single,dir_cos,0.00015443678131155103
+XGBoost,9,single,doy_sin,0.028333151382137524
+XGBoost,9,single,doy_cos,-0.0006370641379199737
+XGBoost,9,single,regime,0.0
+TCN,0,group,Wind speed (5 hourly-based),0.4969531903777205
+TCN,0,group,"Wind components (u10, v10)",0.02144385204513748
+TCN,0,group,Wind direction and steadiness,0.025051583692117508
+TCN,0,group,"Boundary layer height (mean, max, min)",0.045260876983570585
+TCN,0,group,"Temperature and humidity (t2m, d2m, t2m range)",0.05304948764185986
+TCN,0,group,"Pressure (sp, msl)",0.006431986347639862
+TCN,0,group,Precipitation (tp),0.007025440406392669
+TCN,0,group,Day of year,0.06531693678340451
+TCN,0,group,Regime indicator,0.0
+TCN,0,single,u10,0.01782363535145275
+TCN,0,single,v10,0.0036513154122758684
+TCN,0,single,d2m,0.020268434107430334
+TCN,0,single,t2m,0.010095685943689814
+TCN,0,single,blh,-0.003285075862467246
+TCN,0,single,msl,0.001234258794741927
+TCN,0,single,sp,0.0027857965634416225
+TCN,0,single,tp,0.006771203629297173
+TCN,0,single,ws_scalar,0.1174561918928931
+TCN,0,single,ws_max,0.024953969837669
+TCN,0,single,ws_day,0.05687496783283321
+TCN,0,single,ws_night,0.011493870027298781
+TCN,0,single,ws_sd,0.004749813070328046
+TCN,0,single,blh_max,0.04740768596173165
+TCN,0,single,blh_min,0.012774606417576162
+TCN,0,single,t2m_range,0.03283552558537384
+TCN,0,single,steady,0.010046309214634253
+TCN,0,single,dir_sin,0.017157567697084763
+TCN,0,single,dir_cos,-0.0006593042907707902
+TCN,0,single,doy_sin,0.05039673172928275
+TCN,0,single,doy_cos,0.01597013461585033
+TCN,0,single,regime,0.0
+TCN,1,group,Wind speed (5 hourly-based),0.49064728255733403
+TCN,1,group,"Wind components (u10, v10)",0.023989059565118088
+TCN,1,group,Wind direction and steadiness,0.01255801608843593
+TCN,1,group,"Boundary layer height (mean, max, min)",0.03531890261197227
+TCN,1,group,"Temperature and humidity (t2m, d2m, t2m range)",0.06277398422336986
+TCN,1,group,"Pressure (sp, msl)",0.006685934543339378
+TCN,1,group,Precipitation (tp),0.007202186873479366
+TCN,1,group,Day of year,0.0638140872455937
+TCN,1,group,Regime indicator,0.0
+TCN,1,single,u10,0.02174168083478294
+TCN,1,single,v10,-0.0008982464432018666
+TCN,1,single,d2m,0.014941575686937224
+TCN,1,single,t2m,0.015475142608491078
+TCN,1,single,blh,0.009559363402783239
+TCN,1,single,msl,0.004085911212051518
+TCN,1,single,sp,0.0014470767958191023
+TCN,1,single,tp,0.007811540320551591
+TCN,1,single,ws_scalar,0.12489204937707983
+TCN,1,single,ws_max,0.0071115371397062034
+TCN,1,single,ws_day,0.02579451213523174
+TCN,1,single,ws_night,0.01114315169266139
+TCN,1,single,ws_sd,0.00040225367159228974
+TCN,1,single,blh_max,0.058441086600184114
+TCN,1,single,blh_min,0.006484886794228739
+TCN,1,single,t2m_range,0.03705503073239604
+TCN,1,single,steady,0.00643903356555372
+TCN,1,single,dir_sin,0.006069610574433104
+TCN,1,single,dir_cos,-1.5507676750314837e-05
+TCN,1,single,doy_sin,0.056029920538374786
+TCN,1,single,doy_cos,0.0076260456960457355
+TCN,1,single,regime,0.0
+TCN,2,group,Wind speed (5 hourly-based),0.44364327394485337
+TCN,2,group,"Wind components (u10, v10)",0.032897568365906016
+TCN,2,group,Wind direction and steadiness,0.011348853443436769
+TCN,2,group,"Boundary layer height (mean, max, min)",0.05718334552219895
+TCN,2,group,"Temperature and humidity (t2m, d2m, t2m range)",0.0593300839611714
+TCN,2,group,"Pressure (sp, msl)",0.0032158283341578776
+TCN,2,group,Precipitation (tp),0.005640792691137553
+TCN,2,group,Day of year,0.05282173118746449
+TCN,2,group,Regime indicator,0.0
+TCN,2,single,u10,0.03148657980064552
+TCN,2,single,v10,0.0039058544010624695
+TCN,2,single,d2m,0.017336874404742374
+TCN,2,single,t2m,0.0248368122187805
+TCN,2,single,blh,0.006072545459931045
+TCN,2,single,msl,-0.003637279508053848
+TCN,2,single,sp,0.005550928859814985
+TCN,2,single,tp,0.007260005654765267
+TCN,2,single,ws_scalar,0.09282307633071417
+TCN,2,single,ws_max,0.021207935559795277
+TCN,2,single,ws_day,0.030097839520949233
+TCN,2,single,ws_night,0.011162009799738382
+TCN,2,single,ws_sd,0.006840527627051995
+TCN,2,single,blh_max,0.03277553325414133
+TCN,2,single,blh_min,0.011577992133561709
+TCN,2,single,t2m_range,0.021936415024663668
+TCN,2,single,steady,0.006077916140267548
+TCN,2,single,dir_sin,0.007570997806690327
+TCN,2,single,dir_cos,0.0006410059234647325
+TCN,2,single,doy_sin,0.04300769047747903
+TCN,2,single,doy_cos,0.013966389487479202
+TCN,2,single,regime,0.0
+TCN,3,group,Wind speed (5 hourly-based),0.4930289366543665
+TCN,3,group,"Wind components (u10, v10)",0.022683234304372857
+TCN,3,group,Wind direction and steadiness,0.01291063096565953
+TCN,3,group,"Boundary layer height (mean, max, min)",0.04459428172926194
+TCN,3,group,"Temperature and humidity (t2m, d2m, t2m range)",0.06478176895135468
+TCN,3,group,"Pressure (sp, msl)",-0.0038610460588677344
+TCN,3,group,Precipitation (tp),0.00546046916223043
+TCN,3,group,Day of year,0.06774408634095443
+TCN,3,group,Regime indicator,0.0
+TCN,3,single,u10,0.021323468217389917
+TCN,3,single,v10,0.003632577731201292
+TCN,3,single,d2m,0.015650040074472637
+TCN,3,single,t2m,0.024803370772495347
+TCN,3,single,blh,0.007303637957344911
+TCN,3,single,msl,-0.0009190049038798609
+TCN,3,single,sp,-0.001831433618368783
+TCN,3,single,tp,0.005017154668085011
+TCN,3,single,ws_scalar,0.12171211101102664
+TCN,3,single,ws_max,0.026150216230944646
+TCN,3,single,ws_day,0.02761511001663739
+TCN,3,single,ws_night,0.011310324942316641
+TCN,3,single,ws_sd,0.0021270456935866934
+TCN,3,single,blh_max,0.046427515544323804
+TCN,3,single,blh_min,0.00917918937518536
+TCN,3,single,t2m_range,0.030152676244251518
+TCN,3,single,steady,0.007070006556123542
+TCN,3,single,dir_sin,0.007339581519993732
+TCN,3,single,dir_cos,-0.0014974533295383451
+TCN,3,single,doy_sin,0.054119370894016514
+TCN,3,single,doy_cos,0.014268992594660246
+TCN,3,single,regime,0.0
+TCN,4,group,Wind speed (5 hourly-based),0.5159837388258381
+TCN,4,group,"Wind components (u10, v10)",0.02379952402645138
+TCN,4,group,Wind direction and steadiness,0.022087750619579117
+TCN,4,group,"Boundary layer height (mean, max, min)",0.0256765726483853
+TCN,4,group,"Temperature and humidity (t2m, d2m, t2m range)",0.03746473069796837
+TCN,4,group,"Pressure (sp, msl)",0.0043701415242761495
+TCN,4,group,Precipitation (tp),0.0019520173616948354
+TCN,4,group,Day of year,0.04960292500670945
+TCN,4,group,Regime indicator,0.0
+TCN,4,single,u10,0.023277385097156468
+TCN,4,single,v10,0.00286943641936912
+TCN,4,single,d2m,0.0041165977895533555
+TCN,4,single,t2m,0.001770176911518706
+TCN,4,single,blh,0.0021480121319027213
+TCN,4,single,msl,-0.0012125616331975953
+TCN,4,single,sp,0.0011933391593671682
+TCN,4,single,tp,0.0023056511896966227
+TCN,4,single,ws_scalar,0.04004719463076715
+TCN,4,single,ws_max,0.0549416431344239
+TCN,4,single,ws_day,0.05623557711711498
+TCN,4,single,ws_night,0.021193959252722005
+TCN,4,single,ws_sd,0.0060992064316432336
+TCN,4,single,blh_max,0.007378786205277122
+TCN,4,single,blh_min,0.0032264754850460766
+TCN,4,single,t2m_range,0.023207521445660028
+TCN,4,single,steady,0.006160542892260412
+TCN,4,single,dir_sin,0.012812310386075198
+TCN,4,single,dir_cos,0.0019422711035465556
+TCN,4,single,doy_sin,0.03828710273755938
+TCN,4,single,doy_cos,0.008992139276662248
+TCN,4,single,regime,0.0
+TCN,5,group,Wind speed (5 hourly-based),0.4471204897173345
+TCN,5,group,"Wind components (u10, v10)",0.02410976842217407
+TCN,5,group,Wind direction and steadiness,0.015021805200153593
+TCN,5,group,"Boundary layer height (mean, max, min)",0.028496238753878588
+TCN,5,group,"Temperature and humidity (t2m, d2m, t2m range)",0.03881600356432448
+TCN,5,group,"Pressure (sp, msl)",0.006851502603989468
+TCN,5,group,Precipitation (tp),0.004870378126190689
+TCN,5,group,Day of year,0.05125185945199503
+TCN,5,group,Regime indicator,0.0
+TCN,5,single,u10,0.02670132110088309
+TCN,5,single,v10,-0.0026983316620025843
+TCN,5,single,d2m,0.005016233842339746
+TCN,5,single,t2m,0.005591964381370362
+TCN,5,single,blh,0.0010752248690141576
+TCN,5,single,msl,0.004469240858380785
+TCN,5,single,sp,0.001477858179005509
+TCN,5,single,tp,0.0030927171943280762
+TCN,5,single,ws_scalar,0.07978025494824326
+TCN,5,single,ws_max,0.02694914688572424
+TCN,5,single,ws_day,0.03873968919492475
+TCN,5,single,ws_night,0.02077336685603983
+TCN,5,single,ws_sd,0.00382956286560292
+TCN,5,single,blh_max,0.020821516221850446
+TCN,5,single,blh_min,0.010281435169900955
+TCN,5,single,t2m_range,0.019383701454105163
+TCN,5,single,steady,0.006242699003776042
+TCN,5,single,dir_sin,0.014344253047333711
+TCN,5,single,dir_cos,-0.004455871834263048
+TCN,5,single,doy_sin,0.045014722221744276
+TCN,5,single,doy_cos,0.008970897748540419
+TCN,5,single,regime,0.0
+TCN,6,group,Wind speed (5 hourly-based),0.5264743719321905
+TCN,6,group,"Wind components (u10, v10)",0.018246586940193564
+TCN,6,group,Wind direction and steadiness,0.02308898988478495
+TCN,6,group,"Boundary layer height (mean, max, min)",0.033957708567905656
+TCN,6,group,"Temperature and humidity (t2m, d2m, t2m range)",0.05586776464915819
+TCN,6,group,"Pressure (sp, msl)",0.006294951077149213
+TCN,6,group,Precipitation (tp),0.007747055254459778
+TCN,6,group,Day of year,0.06787288732685155
+TCN,6,group,Regime indicator,0.0
+TCN,6,single,u10,0.010162157269411599
+TCN,6,single,v10,0.008062755307627834
+TCN,6,single,d2m,0.010239878750233133
+TCN,6,single,t2m,0.018151648584166125
+TCN,6,single,blh,0.006887661495262309
+TCN,6,single,msl,-0.0019490344789829916
+TCN,6,single,sp,0.0018445922672012394
+TCN,6,single,tp,0.007565204302646023
+TCN,6,single,ws_scalar,0.04623819037721257
+TCN,6,single,ws_max,0.033731462686558154
+TCN,6,single,ws_day,0.06779875879770046
+TCN,6,single,ws_night,0.029881409938388937
+TCN,6,single,ws_sd,-0.001084627346659428
+TCN,6,single,blh_max,0.04141714841478276
+TCN,6,single,blh_min,0.004813691393710328
+TCN,6,single,t2m_range,0.03706063409505848
+TCN,6,single,steady,0.0075861443925956396
+TCN,6,single,dir_sin,0.009595899868120362
+TCN,6,single,dir_cos,0.0036991461446231333
+TCN,6,single,doy_sin,0.05757101970832527
+TCN,6,single,doy_cos,0.009549129303999215
+TCN,6,single,regime,0.0
+TCN,7,group,Wind speed (5 hourly-based),0.4774552023514934
+TCN,7,group,"Wind components (u10, v10)",0.024038134913214514
+TCN,7,group,Wind direction and steadiness,0.01244468406708179
+TCN,7,group,"Boundary layer height (mean, max, min)",0.03839020144034355
+TCN,7,group,"Temperature and humidity (t2m, d2m, t2m range)",0.0474445178041918
+TCN,7,group,"Pressure (sp, msl)",0.005422877010789884
+TCN,7,group,Precipitation (tp),0.005002165054571328
+TCN,7,group,Day of year,0.057973488054484844
+TCN,7,group,Regime indicator,0.0
+TCN,7,single,u10,0.020463272425417057
+TCN,7,single,v10,0.005813034569587738
+TCN,7,single,d2m,0.0153486103530714
+TCN,7,single,t2m,0.0035525971090597077
+TCN,7,single,blh,0.0038274827889124507
+TCN,7,single,msl,0.005570956924429537
+TCN,7,single,sp,-0.0006514850356884039
+TCN,7,single,tp,0.004128845102068823
+TCN,7,single,ws_scalar,0.0812984713533165
+TCN,7,single,ws_max,0.03303420920169471
+TCN,7,single,ws_day,0.03172196149134957
+TCN,7,single,ws_night,0.014539860483740518
+TCN,7,single,ws_sd,0.002698806112083607
+TCN,7,single,blh_max,0.014461146949951686
+TCN,7,single,blh_min,0.007170931957519023
+TCN,7,single,t2m_range,0.03174528601956887
+TCN,7,single,steady,0.008195300310460406
+TCN,7,single,dir_sin,0.004594392541060232
+TCN,7,single,dir_cos,0.0030209395311654452
+TCN,7,single,doy_sin,0.051708370827721006
+TCN,7,single,doy_cos,0.0030442824837419225
+TCN,7,single,regime,0.0
+TCN,8,group,Wind speed (5 hourly-based),0.4430570639126829
+TCN,8,group,"Wind components (u10, v10)",0.023341047818620286
+TCN,8,group,Wind direction and steadiness,0.017849057174532314
+TCN,8,group,"Boundary layer height (mean, max, min)",0.03327479031816107
+TCN,8,group,"Temperature and humidity (t2m, d2m, t2m range)",0.05531577255852939
+TCN,8,group,"Pressure (sp, msl)",0.008216959873728901
+TCN,8,group,Precipitation (tp),0.007132664908819952
+TCN,8,group,Day of year,0.06649512542464034
+TCN,8,group,Regime indicator,0.0
+TCN,8,single,u10,0.023844231295511942
+TCN,8,single,v10,-0.0023912357235570504
+TCN,8,single,d2m,0.015368082365851044
+TCN,8,single,t2m,0.01483400740418026
+TCN,8,single,blh,0.010197254068579475
+TCN,8,single,msl,-0.004789434745281529
+TCN,8,single,sp,0.004326171813029567
+TCN,8,single,tp,0.0060496269612142165
+TCN,8,single,ws_scalar,0.10573044257251804
+TCN,8,single,ws_max,0.01398890335715175
+TCN,8,single,ws_day,0.020468051469117943
+TCN,8,single,ws_night,0.010014326556915209
+TCN,8,single,ws_sd,-0.0018209499069810954
+TCN,8,single,blh_max,0.04372439578877163
+TCN,8,single,blh_min,0.009764558353645359
+TCN,8,single,t2m_range,0.025380227257492192
+TCN,8,single,steady,0.009465407725215192
+TCN,8,single,dir_sin,0.013873759813560083
+TCN,8,single,dir_cos,-0.004335543932405017
+TCN,8,single,doy_sin,0.060559111275416265
+TCN,8,single,doy_cos,0.007890820807772637
+TCN,8,single,regime,0.0
+TCN,9,group,Wind speed (5 hourly-based),0.5018167764239125
+TCN,9,group,"Wind components (u10, v10)",0.035727105958239955
+TCN,9,group,Wind direction and steadiness,0.013137625815983166
+TCN,9,group,"Boundary layer height (mean, max, min)",0.03891172392553939
+TCN,9,group,"Temperature and humidity (t2m, d2m, t2m range)",0.07940066492324813
+TCN,9,group,"Pressure (sp, msl)",0.007852915751374524
+TCN,9,group,Precipitation (tp),0.009538604023884756
+TCN,9,group,Day of year,0.08201900111617458
+TCN,9,group,Regime indicator,0.0
+TCN,9,single,u10,0.02920080092914782
+TCN,9,single,v10,0.008875966200268403
+TCN,9,single,d2m,0.02068688400974509
+TCN,9,single,t2m,0.035486745520193264
+TCN,9,single,blh,0.009033803350080638
+TCN,9,single,msl,-0.0013881375223577797
+TCN,9,single,sp,-0.0012530055995932487
+TCN,9,single,tp,0.010295508207627336
+TCN,9,single,ws_scalar,0.12938034264684517
+TCN,9,single,ws_max,0.013372467435428503
+TCN,9,single,ws_day,0.03393811481379823
+TCN,9,single,ws_night,0.016718402965881275
+TCN,9,single,ws_sd,0.0008545486691479253
+TCN,9,single,blh_max,0.04237140455480563
+TCN,9,single,blh_min,0.012637199215410422
+TCN,9,single,t2m_range,0.04736350473573677
+TCN,9,single,steady,0.003498460889024091
+TCN,9,single,dir_sin,0.005592368777594514
+TCN,9,single,dir_cos,0.0031060157285617727
+TCN,9,single,doy_sin,0.062437609563673654
+TCN,9,single,doy_cos,0.016788667055109462
+TCN,9,single,regime,0.0
+BiLSTM,0,group,Wind speed (5 hourly-based),0.5497144370337051
+BiLSTM,0,group,"Wind components (u10, v10)",0.06352806525851076
+BiLSTM,0,group,Wind direction and steadiness,0.016086285860438875
+BiLSTM,0,group,"Boundary layer height (mean, max, min)",0.03705547697988452
+BiLSTM,0,group,"Temperature and humidity (t2m, d2m, t2m range)",0.04204958041178607
+BiLSTM,0,group,"Pressure (sp, msl)",0.0053582536797507465
+BiLSTM,0,group,Precipitation (tp),0.008387091923700619
+BiLSTM,0,group,Day of year,0.044266488947014404
+BiLSTM,0,group,Regime indicator,0.0
+BiLSTM,0,single,u10,0.052267092273200776
+BiLSTM,0,single,v10,0.008410754285888267
+BiLSTM,0,single,d2m,0.00814911227627505
+BiLSTM,0,single,t2m,0.025350453187203793
+BiLSTM,0,single,blh,0.006643086219833538
+BiLSTM,0,single,msl,0.0008551618144653661
+BiLSTM,0,single,sp,0.00563857801110359
+BiLSTM,0,single,tp,0.009361664794842229
+BiLSTM,0,single,ws_scalar,0.08954061705827465
+BiLSTM,0,single,ws_max,0.051714405777741834
+BiLSTM,0,single,ws_day,0.03740457144276573
+BiLSTM,0,single,ws_night,0.026925625291412725
+BiLSTM,0,single,ws_sd,0.0071676659805314565
+BiLSTM,0,single,blh_max,0.05993923023568145
+BiLSTM,0,single,blh_min,0.00154516934317791
+BiLSTM,0,single,t2m_range,0.01985667641230209
+BiLSTM,0,single,steady,0.006923548137643376
+BiLSTM,0,single,dir_sin,0.008466744272199922
+BiLSTM,0,single,dir_cos,0.002794831828681843
+BiLSTM,0,single,doy_sin,0.03173713386787188
+BiLSTM,0,single,doy_cos,0.017381441039870403
+BiLSTM,0,single,regime,0.0
+BiLSTM,1,group,Wind speed (5 hourly-based),0.5626237187991424
+BiLSTM,1,group,"Wind components (u10, v10)",0.04768002968192131
+BiLSTM,1,group,Wind direction and steadiness,0.02167259368154465
+BiLSTM,1,group,"Boundary layer height (mean, max, min)",0.04714988874951045
+BiLSTM,1,group,"Temperature and humidity (t2m, d2m, t2m range)",0.06261896331643638
+BiLSTM,1,group,"Pressure (sp, msl)",0.021676623386632943
+BiLSTM,1,group,Precipitation (tp),0.005763617226393169
+BiLSTM,1,group,Day of year,0.05085721511250185
+BiLSTM,1,group,Regime indicator,0.0
+BiLSTM,1,single,u10,0.040745133620040196
+BiLSTM,1,single,v10,0.006587831545279843
+BiLSTM,1,single,d2m,0.020480858778969324
+BiLSTM,1,single,t2m,0.04351135299371396
+BiLSTM,1,single,blh,0.04188970739753419
+BiLSTM,1,single,msl,0.025067938690705716
+BiLSTM,1,single,sp,0.025882912920405753
+BiLSTM,1,single,tp,0.006848927248154224
+BiLSTM,1,single,ws_scalar,0.09278059677353359
+BiLSTM,1,single,ws_max,0.04384827293315822
+BiLSTM,1,single,ws_day,0.037302790878505535
+BiLSTM,1,single,ws_night,0.02548562703801559
+BiLSTM,1,single,ws_sd,0.006902558698789629
+BiLSTM,1,single,blh_max,0.12593363781187622
+BiLSTM,1,single,blh_min,0.007926860952976877
+BiLSTM,1,single,t2m_range,0.01722351423053604
+BiLSTM,1,single,steady,0.003406994601402713
+BiLSTM,1,single,dir_sin,0.017517367102281356
+BiLSTM,1,single,dir_cos,0.0018445656976738168
+BiLSTM,1,single,doy_sin,0.035643392114175734
+BiLSTM,1,single,doy_cos,0.014614771955047312
+BiLSTM,1,single,regime,0.0
+BiLSTM,2,group,Wind speed (5 hourly-based),0.5665589903711639
+BiLSTM,2,group,"Wind components (u10, v10)",0.034134554556612795
+BiLSTM,2,group,Wind direction and steadiness,0.02004004777273083
+BiLSTM,2,group,"Boundary layer height (mean, max, min)",0.02713846603190876
+BiLSTM,2,group,"Temperature and humidity (t2m, d2m, t2m range)",0.05221746201879031
+BiLSTM,2,group,"Pressure (sp, msl)",0.013077650469538992
+BiLSTM,2,group,Precipitation (tp),0.004881786204908245
+BiLSTM,2,group,Day of year,0.0433818451963147
+BiLSTM,2,group,Regime indicator,0.0
+BiLSTM,2,single,u10,0.02674973194878858
+BiLSTM,2,single,v10,0.008079099697946656
+BiLSTM,2,single,d2m,0.013881615717051276
+BiLSTM,2,single,t2m,0.013511913539484176
+BiLSTM,2,single,blh,0.02747422273668131
+BiLSTM,2,single,msl,0.00021145554178350067
+BiLSTM,2,single,sp,0.006323065418685048
+BiLSTM,2,single,tp,0.004640718320275928
+BiLSTM,2,single,ws_scalar,0.07633206850271881
+BiLSTM,2,single,ws_max,0.04951126686797813
+BiLSTM,2,single,ws_day,0.03318462117545255
+BiLSTM,2,single,ws_night,0.027305680597571748
+BiLSTM,2,single,ws_sd,0.002198697395661886
+BiLSTM,2,single,blh_max,0.06857685188997067
+BiLSTM,2,single,blh_min,0.0005013798995638586
+BiLSTM,2,single,t2m_range,0.020993979310787746
+BiLSTM,2,single,steady,0.007882904390224543
+BiLSTM,2,single,dir_sin,0.01256873306761418
+BiLSTM,2,single,dir_cos,0.0009105496655447132
+BiLSTM,2,single,doy_sin,0.03387894201086837
+BiLSTM,2,single,doy_cos,0.006005368386483944
+BiLSTM,2,single,regime,0.0
+BiLSTM,3,group,Wind speed (5 hourly-based),0.5479823371496562
+BiLSTM,3,group,"Wind components (u10, v10)",0.01886725678047583
+BiLSTM,3,group,Wind direction and steadiness,0.029472879533162844
+BiLSTM,3,group,"Boundary layer height (mean, max, min)",0.04393330723797306
+BiLSTM,3,group,"Temperature and humidity (t2m, d2m, t2m range)",0.0533785506318923
+BiLSTM,3,group,"Pressure (sp, msl)",0.01713472704080322
+BiLSTM,3,group,Precipitation (tp),0.00479582336694111
+BiLSTM,3,group,Day of year,0.05019653246422344
+BiLSTM,3,group,Regime indicator,0.0
+BiLSTM,3,single,u10,0.014697007817711716
+BiLSTM,3,single,v10,0.0029548574406418225
+BiLSTM,3,single,d2m,0.023316107669924126
+BiLSTM,3,single,t2m,0.023611817163708627
+BiLSTM,3,single,blh,0.030606040616633336
+BiLSTM,3,single,msl,0.00978634760163467
+BiLSTM,3,single,sp,0.010251295852185338
+BiLSTM,3,single,tp,0.005057669113651619
+BiLSTM,3,single,ws_scalar,0.0829865732111289
+BiLSTM,3,single,ws_max,0.06499233832088835
+BiLSTM,3,single,ws_day,0.04961934640264263
+BiLSTM,3,single,ws_night,0.032119378151834355
+BiLSTM,3,single,ws_sd,0.002823815897497772
+BiLSTM,3,single,blh_max,0.11691431538532857
+BiLSTM,3,single,blh_min,0.005506811334949302
+BiLSTM,3,single,t2m_range,0.02690169646462468
+BiLSTM,3,single,steady,0.005642367856428332
+BiLSTM,3,single,dir_sin,0.022763122678930568
+BiLSTM,3,single,dir_cos,0.0037498018418892997
+BiLSTM,3,single,doy_sin,0.03623284913092105
+BiLSTM,3,single,doy_cos,0.015365330816156797
+BiLSTM,3,single,regime,0.0
+BiLSTM,4,group,Wind speed (5 hourly-based),0.5688341739105748
+BiLSTM,4,group,"Wind components (u10, v10)",0.042139231115806794
+BiLSTM,4,group,Wind direction and steadiness,0.026930766262433126
+BiLSTM,4,group,"Boundary layer height (mean, max, min)",0.04139313252484095
+BiLSTM,4,group,"Temperature and humidity (t2m, d2m, t2m range)",0.055386081342437
+BiLSTM,4,group,"Pressure (sp, msl)",0.020832320835741103
+BiLSTM,4,group,Precipitation (tp),0.010835995958030952
+BiLSTM,4,group,Day of year,0.060928969730875006
+BiLSTM,4,group,Regime indicator,0.0
+BiLSTM,4,single,u10,0.03779623663970695
+BiLSTM,4,single,v10,0.004489072074497469
+BiLSTM,4,single,d2m,0.028030098173085927
+BiLSTM,4,single,t2m,0.025753699786281357
+BiLSTM,4,single,blh,0.05329432658120935
+BiLSTM,4,single,msl,0.008857877583342399
+BiLSTM,4,single,sp,-0.005447388725174296
+BiLSTM,4,single,tp,0.010579024702923356
+BiLSTM,4,single,ws_scalar,0.06711381740744163
+BiLSTM,4,single,ws_max,0.06573483447539294
+BiLSTM,4,single,ws_day,0.05148078158594051
+BiLSTM,4,single,ws_night,0.03612054030824078
+BiLSTM,4,single,ws_sd,0.0033321820386896573
+BiLSTM,4,single,blh_max,0.12666592490672235
+BiLSTM,4,single,blh_min,0.004354554302415115
+BiLSTM,4,single,t2m_range,0.02290678699743488
+BiLSTM,4,single,steady,0.006473970477667612
+BiLSTM,4,single,dir_sin,0.023347615986036973
+BiLSTM,4,single,dir_cos,-0.0011089440429056907
+BiLSTM,4,single,doy_sin,0.0576935234166967
+BiLSTM,4,single,doy_cos,0.004944176854200888
+BiLSTM,4,single,regime,0.0
+BiLSTM,5,group,Wind speed (5 hourly-based),0.5461198075961332
+BiLSTM,5,group,"Wind components (u10, v10)",0.027967248192090267
+BiLSTM,5,group,Wind direction and steadiness,0.026194055737000132
+BiLSTM,5,group,"Boundary layer height (mean, max, min)",0.058155012877487956
+BiLSTM,5,group,"Temperature and humidity (t2m, d2m, t2m range)",0.0775760242689149
+BiLSTM,5,group,"Pressure (sp, msl)",0.008514692863321138
+BiLSTM,5,group,Precipitation (tp),0.009106998714848191
+BiLSTM,5,group,Day of year,0.046662953792523255
+BiLSTM,5,group,Regime indicator,0.0
+BiLSTM,5,single,u10,0.02045849952406583
+BiLSTM,5,single,v10,0.005506878440532015
+BiLSTM,5,single,d2m,0.022829113766961128
+BiLSTM,5,single,t2m,0.06567102813896049
+BiLSTM,5,single,blh,0.03916444070993156
+BiLSTM,5,single,msl,0.0002841534884137742
+BiLSTM,5,single,sp,0.0025765501712415873
+BiLSTM,5,single,tp,0.00871029379995777
+BiLSTM,5,single,ws_scalar,0.10235835419016795
+BiLSTM,5,single,ws_max,0.0254860288683486
+BiLSTM,5,single,ws_day,0.030002814798564405
+BiLSTM,5,single,ws_night,0.02008441391709772
+BiLSTM,5,single,ws_sd,0.0017769028661530628
+BiLSTM,5,single,blh_max,0.13611757753147133
+BiLSTM,5,single,blh_min,0.0005064533621058964
+BiLSTM,5,single,t2m_range,0.023994781811702903
+BiLSTM,5,single,steady,0.006727411187585597
+BiLSTM,5,single,dir_sin,0.018930688545034335
+BiLSTM,5,single,dir_cos,0.001144073923160016
+BiLSTM,5,single,doy_sin,0.031102844969855194
+BiLSTM,5,single,doy_cos,0.01638109165159297
+BiLSTM,5,single,regime,0.0
+BiLSTM,6,group,Wind speed (5 hourly-based),0.5518039857657195
+BiLSTM,6,group,"Wind components (u10, v10)",0.046998981895043236
+BiLSTM,6,group,Wind direction and steadiness,0.021588454289499747
+BiLSTM,6,group,"Boundary layer height (mean, max, min)",0.04360417841212606
+BiLSTM,6,group,"Temperature and humidity (t2m, d2m, t2m range)",0.0647910537771669
+BiLSTM,6,group,"Pressure (sp, msl)",0.013945551756039976
+BiLSTM,6,group,Precipitation (tp),0.01220304560708394
+BiLSTM,6,group,Day of year,0.06738654985901925
+BiLSTM,6,group,Regime indicator,0.0
+BiLSTM,6,single,u10,0.03488211254152538
+BiLSTM,6,single,v10,0.011921827895094494
+BiLSTM,6,single,d2m,0.040578990915620394
+BiLSTM,6,single,t2m,0.06326627876283197
+BiLSTM,6,single,blh,0.012767126981995402
+BiLSTM,6,single,msl,0.009209684653971007
+BiLSTM,6,single,sp,-0.0019015498244649431
+BiLSTM,6,single,tp,0.012634830637197347
+BiLSTM,6,single,ws_scalar,0.10778669680968385
+BiLSTM,6,single,ws_max,0.04390766078779247
+BiLSTM,6,single,ws_day,0.03643122731326892
+BiLSTM,6,single,ws_night,0.03179986142344069
+BiLSTM,6,single,ws_sd,0.005075935086701022
+BiLSTM,6,single,blh_max,0.08401557105851236
+BiLSTM,6,single,blh_min,0.007434038250759822
+BiLSTM,6,single,t2m_range,0.019338396842023643
+BiLSTM,6,single,steady,0.007312824915106464
+BiLSTM,6,single,dir_sin,0.01820941342845529
+BiLSTM,6,single,dir_cos,0.0009712157855030102
+BiLSTM,6,single,doy_sin,0.06219924771218323
+BiLSTM,6,single,doy_cos,0.00826327276280836
+BiLSTM,6,single,regime,0.0
+BiLSTM,7,group,Wind speed (5 hourly-based),0.5442125269806588
+BiLSTM,7,group,"Wind components (u10, v10)",0.03312332072209362
+BiLSTM,7,group,Wind direction and steadiness,0.021710272054911106
+BiLSTM,7,group,"Boundary layer height (mean, max, min)",0.02900728059328379
+BiLSTM,7,group,"Temperature and humidity (t2m, d2m, t2m range)",0.04735700279397206
+BiLSTM,7,group,"Pressure (sp, msl)",0.018679999774105328
+BiLSTM,7,group,Precipitation (tp),0.00618146692906677
+BiLSTM,7,group,Day of year,0.045767905261772115
+BiLSTM,7,group,Regime indicator,0.0
+BiLSTM,7,single,u10,0.029342991866486257
+BiLSTM,7,single,v10,0.004003371203924156
+BiLSTM,7,single,d2m,0.0183404197661441
+BiLSTM,7,single,t2m,0.022941049217091936
+BiLSTM,7,single,blh,0.001919845135785847
+BiLSTM,7,single,msl,0.008006585854369652
+BiLSTM,7,single,sp,-0.0020129441842373975
+BiLSTM,7,single,tp,0.004838201362488625
+BiLSTM,7,single,ws_scalar,0.12244895990983173
+BiLSTM,7,single,ws_max,0.03307258233978233
+BiLSTM,7,single,ws_day,0.030890265655867576
+BiLSTM,7,single,ws_night,0.021777747094431234
+BiLSTM,7,single,ws_sd,0.007770768251095195
+BiLSTM,7,single,blh_max,0.03596408005604056
+BiLSTM,7,single,blh_min,0.002494248287453704
+BiLSTM,7,single,t2m_range,0.029131831274026687
+BiLSTM,7,single,steady,0.006924401242560852
+BiLSTM,7,single,dir_sin,0.017773152774614963
+BiLSTM,7,single,dir_cos,-0.0009664365505894889
+BiLSTM,7,single,doy_sin,0.04329089098826614
+BiLSTM,7,single,doy_cos,0.004489001787149016
+BiLSTM,7,single,regime,0.0
+BiLSTM,8,group,Wind speed (5 hourly-based),0.559516140521074
+BiLSTM,8,group,"Wind components (u10, v10)",0.037905558900881056
+BiLSTM,8,group,Wind direction and steadiness,0.02152204317587738
+BiLSTM,8,group,"Boundary layer height (mean, max, min)",0.03190567180622043
+BiLSTM,8,group,"Temperature and humidity (t2m, d2m, t2m range)",0.05022280519204814
+BiLSTM,8,group,"Pressure (sp, msl)",0.01590706170856071
+BiLSTM,8,group,Precipitation (tp),0.005711488982851121
+BiLSTM,8,group,Day of year,0.04122155063004035
+BiLSTM,8,group,Regime indicator,0.0
+BiLSTM,8,single,u10,0.029386153099845703
+BiLSTM,8,single,v10,0.009447689821085247
+BiLSTM,8,single,d2m,0.030240665272031432
+BiLSTM,8,single,t2m,0.010913843118914513
+BiLSTM,8,single,blh,0.002047168994641202
+BiLSTM,8,single,msl,0.0029127801302637145
+BiLSTM,8,single,sp,0.0017358204627675677
+BiLSTM,8,single,tp,0.006349287533040549
+BiLSTM,8,single,ws_scalar,0.07589181767759245
+BiLSTM,8,single,ws_max,0.03265202167952811
+BiLSTM,8,single,ws_day,0.052934804475722595
+BiLSTM,8,single,ws_night,0.03243254066336225
+BiLSTM,8,single,ws_sd,0.0036327162951583338
+BiLSTM,8,single,blh_max,0.05746596290418847
+BiLSTM,8,single,blh_min,0.005185332326940173
+BiLSTM,8,single,t2m_range,0.02035610097729277
+BiLSTM,8,single,steady,0.00695943947994303
+BiLSTM,8,single,dir_sin,0.018055295912358917
+BiLSTM,8,single,dir_cos,-0.002023789506627094
+BiLSTM,8,single,doy_sin,0.03676052120166782
+BiLSTM,8,single,doy_cos,0.002820115635317011
+BiLSTM,8,single,regime,0.0
+BiLSTM,9,group,Wind speed (5 hourly-based),0.5569276989222682
+BiLSTM,9,group,"Wind components (u10, v10)",0.02982769700364546
+BiLSTM,9,group,Wind direction and steadiness,0.025446935050486907
+BiLSTM,9,group,"Boundary layer height (mean, max, min)",0.01817459814762975
+BiLSTM,9,group,"Temperature and humidity (t2m, d2m, t2m range)",0.04607471721713212
+BiLSTM,9,group,"Pressure (sp, msl)",0.017589156287049323
+BiLSTM,9,group,Precipitation (tp),0.009148076870354682
+BiLSTM,9,group,Day of year,0.0352186119290868
+BiLSTM,9,group,Regime indicator,0.0
+BiLSTM,9,single,u10,0.0260891918325055
+BiLSTM,9,single,v10,0.0017637614858516892
+BiLSTM,9,single,d2m,0.0052848414521851185
+BiLSTM,9,single,t2m,0.009545108742047514
+BiLSTM,9,single,blh,0.015082471764381378
+BiLSTM,9,single,msl,0.007973981226596583
+BiLSTM,9,single,sp,0.006764624702543143
+BiLSTM,9,single,tp,0.008269907159379686
+BiLSTM,9,single,ws_scalar,0.08227363980943102
+BiLSTM,9,single,ws_max,0.045188994451944596
+BiLSTM,9,single,ws_day,0.04309526655739278
+BiLSTM,9,single,ws_night,0.014829039330655413
+BiLSTM,9,single,ws_sd,0.005934140736170168
+BiLSTM,9,single,blh_max,0.05457564294423025
+BiLSTM,9,single,blh_min,0.0007009544747760943
+BiLSTM,9,single,t2m_range,0.019036240443919418
+BiLSTM,9,single,steady,0.007421470868731961
+BiLSTM,9,single,dir_sin,0.02168359833786212
+BiLSTM,9,single,dir_cos,-0.003876249877176818
+BiLSTM,9,single,doy_sin,0.03665124716603577
+BiLSTM,9,single,doy_cos,-0.0010405011818689358
+BiLSTM,9,single,regime,0.0

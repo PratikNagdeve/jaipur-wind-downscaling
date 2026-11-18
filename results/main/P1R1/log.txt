@@ -1,0 +1,17 @@
+config P1R1 phys 1 features 22 train/val/test 3114 1093 1066
+MLR done
+XGB best {'max_depth': 2, 'learning_rate': 0.03, 'subsample': 0.8, 'colsample_bytree': 1.0, 'min_child_weight': 10, 'reg_lambda': 0.0}
+XGBoost done
+TCN best {'filters': 64, 'kernel': 2, 'blocks': 1, 'dropout': 0.0, 'l2': 0.001, 'dense': 64, 'lr': 0.003, 'batch': 128}
+TCN done; seed-mean test RMSE 0.5672
+Attention-TCN best {'filters': 64, 'kernel': 5, 'blocks': 3, 'dropout': 0.3, 'l2': 0.001, 'att': 16, 'dense': 16, 'lr': 0.003, 'batch': 64}
+Attention-TCN done; seed-mean test RMSE 0.5718
+Transformer best {'d_model': 64, 'heads': 4, 'layers': 1, 'ff': 32, 'dropout': 0.2, 'l2': 0.001, 'dense': 64, 'lr': 0.0003, 'batch': 128}
+Transformer done; seed-mean test RMSE 0.5695
+LSTM best {'units': 32, 'layers': 2, 'dropout': 0.0, 'l2': 0.0001, 'dense': 64, 'lr': 0.001, 'batch': 64}
+LSTM done; seed-mean test RMSE 0.5727
+BiLSTM best {'units': 32, 'layers': 2, 'dropout': 0.0, 'l2': 0.001, 'dense': 32, 'lr': 0.0003, 'batch': 64}
+BiLSTM done; seed-mean test RMSE 0.5661
+Attention-BiLSTM best {'units': 32, 'layers': 1, 'dropout': 0.1, 'l2': 1e-05, 'dense': 32, 'lr': 0.003, 'batch': 128, 'att': 32}
+Attention-BiLSTM done; seed-mean test RMSE 0.5712
+finished P1R1

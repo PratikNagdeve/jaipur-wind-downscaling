@@ -1,0 +1,1 @@
+{"filters": 16, "kernel": 3, "blocks": 1, "dropout": 0.3, "l2": 1e-05, "dense": 16, "lr": 0.001, "batch": 32}

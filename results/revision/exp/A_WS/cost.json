@@ -1,0 +1,15 @@
+{
+ "n_train": 3114,
+ "features": [
+  "u10",
+  "v10",
+  "d2m",
+  "t2m",
+  "blh",
+  "msl",
+  "sp",
+  "tp",
+  "ws_scalar",
+  "regime"
+ ]
+}
